@@ -11,9 +11,9 @@ Navbar, InputPanel , OutputPanel (Children) <br>
 Table, Button (Grand Children)
 
 <h1>Available Queries</h1>
-<h2>Select * from Posts</h2><br>
-<h2>Select * from Comments</h2><br>
-<h2>Select * from Todo</h2>
+Select * from Posts<br>
+Select * from Comments<br>
+Select * from Todo
 
 <h1>Features</h1>
 <p>Dark Editor</p>
@@ -22,7 +22,7 @@ Table, Button (Grand Children)
 <p>Search bar availaible in table</p>
 <p>Pagination in table</p>
 
-#PageLoadTime
+<h1>PageLoadTime</h1>
 
 <p>Load Time: ~500 ms</p>
 
