@@ -1,0 +1,46 @@
+import React from 'react'
+import AceEditor from "react-ace";
+import Button from './Button';
+
+import "ace-builds/src-noconflict/mode-mysql";
+import "ace-builds/src-noconflict/theme-solarized_dark";
+import "ace-builds/src-noconflict/ext-language_tools";
+
+
+
+const Input = ({ setQuery, value, setValue }) => {
+  function onChange(newValue) {
+    setValue(newValue);
+  }
+
+  function onSubmit(){
+    var Z = value.toLowerCase().slice(value.indexOf("from") + "from".length);
+    setQuery(Z.split(" ")[1]);
+  }
+  return (
+    <div className='input'>
+    <AceEditor
+        mode="mysql"
+        theme="solarized_dark"
+        onChange={onChange}
+        name="UNIQUE_ID_OF_DIV"
+        editorProps={{ $blockScrolling: true }}
+        fontSize={18}
+        placeholder="Write your Query here..."
+        width='75%'
+        minLines={20}
+        maxLines={30}
+        setOptions={{
+          enableBasicAutocompletion: true,
+          enableLiveAutocompletion: true,
+          enableSnippets: true,
+        }}
+        value={value}
+
+    />
+    <Button classVal="exec-btn" eventTrigger={onSubmit}>Execute</Button>
+    </div>
+  )
+}
+
+export default Input

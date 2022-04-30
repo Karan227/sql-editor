@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import Navbar from './components/layouts/Navbar';
+import Input from './components/body/InputPanel';
+import Output from './components/body/OutputPanel';
+import './style.css';
+import {useState} from 'react';
+import { Toaster } from 'react-hot-toast';
+
+//Component Toaster,InputPanel,OutputPanel
+//API used https://jsonplaceholder.typicode.com/${table_name}
+//for more deatils goto Readme.md
+
 
 function App() {
+  const [query, setQuery] = useState("");
+  const [value, setValue] = useState("select * from posts");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Toaster  position="top-center" reverseOrder={false}/>
+      <Navbar/>
+      <div className='container'>
+        <Input value={value} setQuery={setQuery} setValue={setValue}/>
+        <Output query={query}/>
+      </div>
     </div>
   );
 }
