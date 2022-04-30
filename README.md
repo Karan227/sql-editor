@@ -2,7 +2,7 @@
 
 In the project directory, you can run:
 
-Website Link: [Link](https://harmonious-cranachan-d899a3.netlify.app/)
+Website Link: [https://harmonious-cranachan-d899a3.netlify.app/(https://harmonious-cranachan-d899a3.netlify.app/)
 
 ### `npm start`
 
