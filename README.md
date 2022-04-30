@@ -4,6 +4,7 @@ In the project directory, you can run:
 
 Website Link: [https://harmonious-cranachan-d899a3.netlify.app/](https://harmonious-cranachan-d899a3.netlify.app/)
 
+Technology Used: React Js, CSS.
 
 <h1>Used Components</h1>
 App (Parent) <br>
