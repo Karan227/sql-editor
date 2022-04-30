@@ -1,6 +1,4 @@
-## Available Scripts
 
-In the project directory, you can run:
 
 Website Link: [https://harmonious-cranachan-d899a3.netlify.app/](https://harmonious-cranachan-d899a3.netlify.app/)
 
