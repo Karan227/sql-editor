@@ -12,16 +12,16 @@ Navbar, InputPanel , OutputPanel (Children) <br>
 Table, Button (Grand Children)
 
 <h1>Available Queries</h1>
-Select * from Posts<br>
-Select * from Comments<br>
-Select * from Todos
+-> Select * from Posts<br>
+-> Select * from Comments<br>
+-> Select * from Todos
 
 <h1>Features</h1>
-<p>Dark Editor</p>
-<p>Auto Complete in Editor</p>
-<p>Toast Notification for each query</p>
-<p>Search bar availaible in table</p>
-<p>Pagination in table</p>
+<p>* Dark Editor</p>
+<p>* Auto Complete in Editor</p>
+<p>* Toast Notification for each query</p>
+<p>* Search bar availaible in table</p>
+<p>* Pagination in table</p>
 
 <h1>PageLoadTime</h1>
 
