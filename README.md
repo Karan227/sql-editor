@@ -13,7 +13,7 @@ Table, Button (Grand Children)
 <h1>Available Queries</h1>
 Select * from Posts<br>
 Select * from Comments<br>
-Select * from Todo
+Select * from Todos
 
 <h1>Features</h1>
 <p>Dark Editor</p>
