@@ -11,13 +11,13 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 <h1>Components</h1>
-App (Parent)
-Navbar, InputPanel , OutputPanel (Children)
+App (Parent) <br>
+Navbar, InputPanel , OutputPanel (Children) <br>
 Table, Button (Grand Children)
 
 <h1>Queries</h1>
-Select * from Posts
-Select * from Comments
+Select * from Posts <br>
+Select * from Comments <br>
 Select * from Todo
 
 #PageLoadTime
