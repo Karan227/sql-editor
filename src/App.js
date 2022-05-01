@@ -12,6 +12,7 @@ import { Toaster } from 'react-hot-toast';
 
 
 function App() {
+  const [val, toggleVal] = useState();
   const [query, setQuery] = useState("");
   const [value, setValue] = useState("select * from posts");
   return (
@@ -19,8 +20,8 @@ function App() {
       <Toaster  position="top-center" reverseOrder={false}/>
       <Navbar/>
       <div className='container'>
-        <Input value={value} setQuery={setQuery} setValue={setValue}/>
-        <Output query={query}/>
+        <Input value={value} setQuery={setQuery} setValue={setValue} toggleVal={toggleVal} val={val}/>
+        <Output query={query} val={val}/>
       </div>
     </div>
   );

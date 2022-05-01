@@ -1,10 +1,12 @@
 import React from 'react'
 import Table from './Table';
 
-const Output = ({query}) => {
+
+//OutputPanel Component
+const Output = ({query,val}) => {
   return (
     <div className='output'>
-        <Table table_name={query}/>
+        <Table table_name={query} val={val}/>
     </div>
   )
 }

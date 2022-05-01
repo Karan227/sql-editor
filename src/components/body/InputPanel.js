@@ -8,7 +8,7 @@ import "ace-builds/src-noconflict/ext-language_tools";
 
 
 
-const Input = ({ setQuery, value, setValue }) => {
+const Input = ({ setQuery, value, setValue, val, toggleVal }) => {
   function onChange(newValue) {
     setValue(newValue);
   }
@@ -16,6 +16,7 @@ const Input = ({ setQuery, value, setValue }) => {
   function onSubmit(){
     var Z = value.toLowerCase().slice(value.indexOf("from") + "from".length);
     setQuery(Z.split(" ")[1]);
+    toggleVal(val^1);
   }
   return (
     <div className='input'>

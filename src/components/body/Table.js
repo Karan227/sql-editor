@@ -4,7 +4,9 @@ import "react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.m
 import { MDBDataTable } from "mdbreact";
 import toast from "react-hot-toast";
 
-const Table = ({ table_name }) => {
+
+//Table Component
+const Table = ({ table_name,val}) => {
   const [data, setData] = useState({
     columns: [],
     rows: [],
@@ -32,7 +34,7 @@ const Table = ({ table_name }) => {
           toast.error("OOPS! Check Your Query :)")
         });
     else setData({ columns: data.columns, rows: [] });
-  }, [table_name]);
+  }, [table_name,val]);
   return (
     <div>
       {!data.rows.length ? "" : <MDBDataTable striped bordered data={data}/>}
