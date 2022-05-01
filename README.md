@@ -1,23 +1,28 @@
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+Website Link: [https://harmonious-cranachan-d899a3.netlify.app/](https://harmonious-cranachan-d899a3.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Technology Used: React Js, CSS.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h1>Used Components</h1>
+App (Parent) <br>
+Navbar, InputPanel , OutputPanel (Children) <br>
+Table, Button (Grand Children)
 
-#Components
-## App (Parent)
-## Navbar, InputPanel , OutputPanel (Children)
-## Table, Button (Grand Children)
+<h1>Available Queries</h1>
+-> Select * from Posts<br>
+-> Select * from Comments<br>
+-> Select * from Todos
 
-#Queries
-## Select * from Posts
-## Select * from Comments
-## Select * from Todo
+<h1>Features</h1>
+<p>* Dark Editor</p>
+<p>* Auto Complete in Editor</p>
+<p>* Toast Notification for each query</p>
+<p>* Search bar available in table</p>
+<p>* Pagination in table</p>
 
-#PageLoadTime
+<h1>PageLoadTime</h1>
+
+<p>Load Time: ~500 ms</p>
+
+
