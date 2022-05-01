@@ -18,7 +18,7 @@ Table, Button (Grand Children)
 <p>* Dark Editor</p>
 <p>* Auto Complete in Editor</p>
 <p>* Toast Notification for each query</p>
-<p>* Search bar availaible in table</p>
+<p>* Search bar available in table</p>
 <p>* Pagination in table</p>
 
 <h1>PageLoadTime</h1>
