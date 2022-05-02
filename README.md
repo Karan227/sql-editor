@@ -6,7 +6,7 @@ Technology Used: React Js, CSS.
 
 <h1>Used Components</h1>
 App (Parent) <br>
-Navbar, InputPanel , OutputPanel (Children) <br>
+Navbar, InputPanel, OutputPanel, Footer (Children) <br>
 Table, Button (Grand Children)
 
 <h1>Available Queries</h1>
