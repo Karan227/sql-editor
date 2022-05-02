@@ -35,9 +35,11 @@ const Table = ({ table_name,val}) => {
         });
     else setData({ columns: data.columns, rows: [] });
   }, [table_name,val]);
+  
+  //returning our table
   return (
     <div>
-      {!data.rows.length ? "" : <MDBDataTable striped bordered hover color="primary-color" data={data}/>}      //returning our table
+      {!data.rows.length ? "" : <MDBDataTable striped bordered hover color="primary-color" data={data}/>}      
     </div>
   );
 };
