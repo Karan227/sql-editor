@@ -19,7 +19,7 @@ const Input = ({ setQuery, value, setValue, val, toggleVal }) => {
     toggleVal(val^1);
   }
   return (
-    <div className='input'>
+    <div className='input'>        //Configuring our Ace Editor
     <AceEditor
         mode="mysql"
         theme="solarized_dark"
