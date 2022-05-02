@@ -14,12 +14,12 @@ const Table = ({ table_name,val}) => {
   useEffect(() => {
     if (table_name)
       axios
-        .get(`https://jsonplaceholder.typicode.com/${table_name}`)
+        .get(`https://jsonplaceholder.typicode.com/${table_name}`)         //fetching API Data
         .then((res) => {
           if (res)
             setData({
               columns:
-                Array.isArray(res.data) && res.data.length
+                Array.isArray(res.data) && res.data.length                  //processing data
                   ? Object.keys(res.data?.[0]).map((key) => ({
                       label: key.toUpperCase(),
                       field: key,
@@ -37,7 +37,7 @@ const Table = ({ table_name,val}) => {
   }, [table_name,val]);
   return (
     <div>
-      {!data.rows.length ? "" : <MDBDataTable striped bordered hover color="primary-color" data={data}/>}
+      {!data.rows.length ? "" : <MDBDataTable striped bordered hover color="primary-color" data={data}/>}      //returning our table
     </div>
   );
 };
