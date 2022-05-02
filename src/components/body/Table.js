@@ -37,7 +37,7 @@ const Table = ({ table_name,val}) => {
   }, [table_name,val]);
   return (
     <div>
-      {!data.rows.length ? "" : <MDBDataTable striped bordered data={data}/>}
+      {!data.rows.length ? "" : <MDBDataTable striped bordered hover color="primary-color" data={data}/>}
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react'
 import AceEditor from "react-ace";
-import Button from './Button';
+import Button from './ExecButton';
 
 import "ace-builds/src-noconflict/mode-mysql";
 import "ace-builds/src-noconflict/theme-solarized_dark";

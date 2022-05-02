@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from './components/layouts/Navbar';
 import Input from './components/body/InputPanel';
 import Output from './components/body/OutputPanel';
+import Footer from  './components/layouts/Footer';
 import './style.css';
 import {useState} from 'react';
 import { Toaster } from 'react-hot-toast';
@@ -19,10 +20,9 @@ function App() {
     <div>
       <Toaster  position="top-center" reverseOrder={false}/>
       <Navbar/>
-      <div className='container'>
-        <Input value={value} setQuery={setQuery} setValue={setValue} toggleVal={toggleVal} val={val}/>
-        <Output query={query} val={val}/>
-      </div>
+      <Input value={value} setQuery={setQuery} setValue={setValue} toggleVal={toggleVal} val={val}/>
+      <Output query={query} val={val}/>
+      <Footer/>
     </div>
   );
 }
