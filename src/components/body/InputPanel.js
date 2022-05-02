@@ -14,8 +14,8 @@ const Input = ({ setQuery, value, setValue, val, toggleVal }) => {
   }
 
   function onSubmit(){
-    var Z = value.toLowerCase().slice(value.indexOf("from") + "from".length);
-    setQuery(Z.split(" ")[1]);
+    var Table_name = value.toLowerCase().slice(value.indexOf("from") + "from".length);
+    setQuery(Table_name.split(" ")[1]);
     toggleVal(val^1);
   }
   return (
